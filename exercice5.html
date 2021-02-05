@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice 5 - JS | MERIDJA Ryad</title>
+  <meta name="description"
+    content="Exercice 5 en Javascript réalisé pour le cours de C. Pauline dans le cadre de la formation DEV-WEB à l'IFA Metz." />
+  <meta name="author" content="RyoandFlex">
+  <link rel="stylesheet" href="CSS/exercice5.css">
+  <script src="JS/exercice5.js"></script>
+  <script src="https://kit.fontawesome.com/62c98e86d0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <form>
+    <h1>P<i class="fas fa-egg"></i>ULES P<i class="fas fa-egg"></i><i class="fas fa-egg"></i>L</h1>
+    <div id="container">
+      <label>Race</label> <span id="errorRace" class="mandatory">Ce champs est obligatoire</span><br>
+      <input type="text" name="race" id="race">
+      <br><br>
+      <label>Nom</label> <span id="errorName" class="mandatory">Ce champs est obligatoire</span><br>
+      <input type="text" name="name" id="name">
+      <br><br>
+      <label>Couleur de la poule</label> <span id="errorColorC" class="mandatory">Ce champs est obligatoire</span><br>
+      <input type="text" name="colorC" id="colorC">
+      <br><br>
+      <label>Couleur des œufs</label> <span id="errorColorE" class="mandatory">Ce champs est obligatoire</span><br>
+      <select name="colorE" id="colorE">
+        <option value="">Veuillez sélectionner une couleur</option>
+        <option id="beige" value="Beige">Beige</option>
+        <option id="blue" value="Bleu">Bleu</option>
+        <option id="green" value="Vert">Vert</option>
+        <option id="brown" value="Brun">Brun</option>
+        <option id="white" value="Blanc">Blanc</option>
+      </select>
+      <br><br>
+      <label>Nombre œufs/jour</label> <span id="errorED" class="mandatory">Ce champs est obligatoire</span><br>
+      <input type="text" name="eggD" id="eggD">
+      <div id="GG">Poule ajoutée !</div>
+    </div>
+    <div id="viewer">
+      <table id="chickenViewer" border="1">
+        <thead>
+          <tr>
+            <th>Race</th>
+            <th>Nom</th>
+            <th>Couleur de la poule</th>
+            <th>Couleur des œufs</th>
+            <th class="eggN">Œufs / jour</th>
+            <th class="eggN">Œufs / semaine</th>
+            <th class="eggN">Œufs / mois</th>
+            <th class="eggN">Œufs / année</th>
+            <th>$$$$ annuel</th>
+          </tr>
+        </thead>
+        <tbody id="newChicken"></tbody>
+      </table>
+      <br><br>
+      <div id="money"></div>
+    </div>
+    <br><br>
+    <button onclick="addC()" class="addC" type="button">Ajouter une poule</button>
+    <button onclick="viewC()" class="viewC" type="button">Voir les poules</button>
+    <button type="reset">Vider les champs</button>
+  </form>
+</body>
+
+</html>
